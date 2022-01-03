@@ -1,0 +1,742 @@
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+</head>
+
+<style>
+    body{
+        background-color:antiquewhite;
+    }
+</style>
+<body>
+
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5" id="main-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand display-6 fw-bolder fs-1" href="#"> <i class="bi bi-journals display-2"></i> Net Ninja Pro - the Book</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end align-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item px-5">
+                
+                <a class="nav-link active text-dark fs-4 " aria-current="page" href="#main-nav"> <i class="bi bi-house-door"></i> Home</a>
+              </li>
+              <li class="nav-item px-5">
+                <a class="nav-link text-dark fs-4" href="#contact"> <i class="bi bi-person-rolodex"></i> Contact</a>
+              </li>
+              <li class="nav-item px-5">
+                <a class="nav-link text-dark fs-4" href="#reviews"> <i class="bi bi-list-columns-reverse"></i> Reviews</a>
+              </li>
+              <li class="nav-item px-5">
+                <a class="nav-link text-dark fs-4" href="#subscription"> <i class="bi bi-wallet"></i> Buy Subscription</a>
+              </li>
+              <a class="btn btn-success fw-bolder px-5 text-light fs-4 d-none d-md-inline" href="#pricing" role="button"> <i class="bi bi-bag-fill"></i> Buy books</a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+<!-- section for description and images -->
+   <section id="introduction">
+    <div class="container">
+        <div class="row align-items-center">
+              <div class="col-md-5 fs-3 text-dark py-5 text-start">
+                <img src="/assets/ebook-cover.png" alt="Ebook Cover" class="img-fluid d-none d-md-block">
+              </div>
+
+              <div class="col fs-3 text-dark p-5 text-muted text-md-center text-sm-end">
+                <p class="lead fs-2">Node.js is an open-source, cross-platform, 
+                    back-end JavaScript runtime environment that runs on the V8 engine 
+                    and executes JavaScript code outside a web browser.
+                </p> 
+                
+                <p class="text-dark fs-5">
+                    Node.js allows the creation of Web servers and networking tools using 
+                    JavaScript and a collection of "modules" that handle various core functionalities.
+                    Modules are provided for file system I/O, networking (DNS, HTTP, TCP, TLS/SSL, or UDP),
+                    inary data (buffers), cryptography functions, data streams, and other core functions.
+                    Node.js's modules use an API designed to reduce the complexity of writing server applications.
+                    JavaScript is the only language that Node.js supports natively, but many compile-to-JS languages 
+                    are available. As a result, Node.js applications can be written in CoffeeScript, Dart, 
+                    TypeScript, ClojureScript and others.
+                    Node.js is primarily used to build network programs such as Web servers. The most significant 
+                    difference between Node.js and PHP is that most functions in PHP block until completion 
+                    (commands execute only after previous commands finish), while Node.js functions are non-blocking 
+                    (commands execute concurrently or even in parallel, and use callbacks to signal completion or failure).
+                    Node.js is officially supported on Linux, macOS and Microsoft Windows 8.1 and Server 2012 (and later),
+                    with tier 2 support for SmartOS and IBM AIX and experimental support for FreeBSD. OpenBSD also works, and LTS 
+                    versions available for IBM i (AS/400). The provided source code may also be built on similar operating systems 
+                    to those officially supported or be modified by third parties to support others such as NonStop OS and Unix servers. 
+                </p>
+            </div>
+
+            <div class="container">
+              <div class="row align-items-center px-5 ms-5">
+                <div class="col">
+                  <p class="h4 text-muted">Wanna know about computer hardware?</p>
+                  <p class="h4 text-muted">Click on the button below</p>
+                  <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    Computer Hardware
+                  </button>
+                </div>
+              </div>  
+            </div>
+
+          </div>
+    </div>
+   </section>
+
+<!-- subsciptions -->
+  <section id="subscription">
+    <div class="container-lg">
+    <div class="card-group my-5 gap-5">
+      <!-- Card 1 -->
+      <div class="card border-primary mt-5 text-light" style="height: 35rem; background-color: darkturquoise;">
+        <div class="card-header"><p class="display-6 text-light text-center">Most Popular</p></div>
+        <div class="card-header"><p class="display-5 text-light text-center">Monthly Membership</p></div>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <!-- Card 1 -->
+
+
+      <!-- Card 2 -->
+      <div class="card border-success border-start text-light border-success" style="height: 40rem; background-color: darkcyan;">
+        <div class="card-header"><p class="display-6 text-center ">Most Popular</p></div>
+        <div class="card-header"><p class="display-5 text-center">Monthly Membership</p></div>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+      <!-- card 2 -->
+
+
+
+      <!-- Card 3 -->
+      <div class="card border-primary mt-5 text-light" style="height: 35rem; background-color: darkturquoise;">
+        <div class="card-header"><p class="display-6 text-light text-center">Most Popular</p></div>
+        <div class="card-header"><p class="display-5 text-light text-center">Monthly Membership</p></div>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <!-- Card 3 -->
+
+    </div>
+  </div>
+  </section>
+<!-- subsciptions -->
+  
+
+
+
+ <!-- buying a book -->
+   <section id="pricing">
+
+    <div class="container">
+        <div class="text-center">
+            <p class="display-4 text-muted mb-5">More Programming books</p>
+        </div>
+    </div>
+ <!-- buying a book -->
+
+    <!-- Frist 3 cards -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card card border-dark" style="width: 25rem;">
+                      <img src="/assets/html-book.jpeg" alt="HTML book cover" class="img-fluid d-none d-md-block">
+                        <div class="card-body">
+                          <p class="lead display-6 text-muted">HTML for beginners</p>
+                          <p class="card-text fs-5">
+                            The HyperText Markup Language, or HTML is the standard markup language for documents 
+                            designed to be displayed in a web browser. It can be assisted by technologies such as 
+                            Cascading Style Sheets and scripting languages such as JavaScript.
+                          </p>
+                          <span class="text-decoration-line-through text-danger fs-1 pe-4">$49.99</span>
+                          <span class="text-success fs-1">$9.99</span>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card card border-dark" style="width: 25rem;">
+                        <img src="/assets/JS-book.jpeg" alt="JS book cover" class="img-fluid d-none d-md-block">
+                        <div class="card-body">
+                          <p class="display-6 lead text-muted">JS for beginners</p>
+                          <p class="card-text fs-5">
+                            JavaScript, often abbreviated JS, is a programming language that is one of the core 
+                            technologies of the World Wide Web, alongside HTML and CSS. Over 97% of websites use 
+                            JavaScript on the client side for web page behavior, often incorporating third-party 
+                            libraries.
+                          </p>
+                          <span class="text-decoration-line-through text-danger fs-1 pe-4">$59.99</span>
+                          <span class="text-success fs-1">$9.99</span>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card card border-dark" style="width: 25rem;">
+                        <img src="/assets/CSS-book.jpg" alt="CSS book cover" class="img-fluid d-none d-md-block">
+                        <div class="card-body">
+                          <p class="lead display-6 text-muted">CSS for beginners</p>
+                          <p class="card-text fs-5">
+                            Cascading Style Sheets is a style sheet language used for describing the presentation 
+                            of a document written in a markup language such as HTML. CSS is a cornerstone technology 
+                            of the World Wide Web, alongside HTML and JavaScript. 
+                          </p>
+                          <span class="text-decoration-line-through text-danger fs-1 pe-4">$49.99</span>
+                          <span class="text-success fs-1">$9.99</span>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+      <!-- Frist 3 cards -->
+
+
+
+      <!-- Middle 3 cards -->
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card card border-success" style="width: 25rem;">
+                        <img src="/assets/php-book.jpg" alt="PHP book Cover" class="img-fluid d-none d-md-block">
+                        <div class="card-body">
+                          <p class="lead display-6 text-muted">PHP for beginners</p>
+                          <p class="card-text fs-5">
+                            PHP is a general-purpose scripting language geared towards web development. 
+                            It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1994. 
+                            The PHP reference implementation is now produced by The PHP Group. 
+                          </p>
+                          <span class="text-decoration-line-through text-danger fs-1 pe-4">$69.99</span>
+                          <span class="text-success fs-1">$9.99</span>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card card border-success" style="width: 25rem;">
+                        <img src="/assets/mysql-book.jpg" alt="MySQL book Cover" class="img-fluid d-none d-md-block">
+                        <div class="card-body">
+                          <p class="display-6 lead text-muted">MySQL for beginners</p>
+                          <p class="card-text fs-5">
+                            MySQL is an open-source relational database management system. 
+                            Its name is a combination of "My", the name of co-founder Michael 
+                            Widenius's daughter, and "SQL", the abbreviation for Structured Query 
+                            Language.
+                          </p>
+                          <span class="text-decoration-line-through text-danger fs-1 pe-4">$69.99</span>
+                          <span class="text-success fs-1">$9.99</span>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card card border-success" style="width: 25rem;">
+                        <img src="/assets/python-book.jpg" alt="Python book Cover" class="img-fluid d-none d-md-block">
+                        <div class="card-body">
+                          <p class="lead display-6 text-muted">Python for beginners</p>
+                          <p class="card-text fs-5">
+                            Python is an interpreted high-level general-purpose programming language. 
+                            Its design philosophy emphasizes code readability with its use of significant 
+                            indentation. Its language constructs as well as its object-oriented approach aim 
+                            to help programmers write clear, logical code for small and large-scale projects. 
+                          </p>
+                          <span class="text-decoration-line-through text-danger fs-1 pe-4">$79.99</span>
+                          <span class="text-success fs-1">$9.99</span>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle 3 cards -->
+
+
+
+
+        <!-- End 3 cards -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card card border-warning" style="width: 25rem;">
+                        <img src="/assets/c-plus-plus-book.jpg" alt="C++ book Cover" class="img-fluid d-none d-md-block">
+                        <div class="card-body">
+                          <p class="lead display-6 text-muted">C++ for beginners</p>
+                          <p class="card-text fs-5">
+                            PC++ is a general-purpose programming language created by Bjarne Stroustrup as an extension
+                            of the C programming language, or "C with Classes".
+                          </p>
+                          <span class="text-decoration-line-through text-danger fs-1 pe-4">$49.99</span>
+                          <span class="text-success fs-1">$9.99</span>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card card border-warning" style="width: 25rem;">
+                        <img src="/assets/c-sharp-book.jpg" alt="C# book Cover" class="img-fluid d-none d-md-block">
+                        <div class="card-body">
+                          <p class="display-6 lead text-muted">C# for beginners</p>
+                          <p class="card-text fs-5">
+                            C# is a general-purpose, multi-paradigm programming language. C# encompasses static typing, 
+                            strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, 
+                            and component-oriented programming disciplines.
+                          </p>
+                          <span class="text-decoration-line-through text-danger fs-1 pe-4">$49.99</span>
+                          <span class="text-success fs-1">$9.99</span>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card card border-warning" style="width: 25rem;">
+                        <img src="/assets/java-book.jpg" alt="Java book Cover" class="img-fluid d-none d-md-block">
+                        <div class="card-body">
+                          <p class="lead display-6 text-muted">Java for beginners</p>
+                          <p class="card-text fs-5">
+                            Java is a high-level, class-based, object-oriented programming language that is 
+                            designed to have as few implementation dependencies as possible.
+                          </p>
+                          <span class="text-decoration-line-through text-danger fs-1 pe-4">$49.99</span>
+                          <span class="text-success fs-1">$9.99</span>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End 3 cards -->
+   </section>
+
+   <!-- review heading -->
+<section>
+  <div class="container-lg">
+    <div class="text-center">
+      <p class="lead display-6 text-dark my-5">A preview of what you will be learning ...</p>
+    </div>
+</section>
+<!-- review heading -->
+
+<!-- Accordion for book chapter review -->
+<section>
+  <div class="row my-5">
+
+    <div class="col-md-4">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              HTML - Chapter 1
+              <i class="bi bi-book ms-5 fs-1"></i>
+            </button>
+          </h2>
+          <div id="collapseOne text-secondary" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              JavaScript - Chapter 1
+              <i class="bi bi-book ms-5 fs-1"></i>
+            </button>
+          </h2>
+          <div id="collapseOne text-secondary" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              CSS - Chapter 1
+              <i class="bi bi-book ms-5 fs-1"></i>
+            </button>
+          </h2>
+          <div id="collapseOne text-secondary" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row my-5">
+
+    <div class="col-md-4">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              PHP - Chapter 1
+              <i class="bi bi-book ms-5 fs-1"></i>
+            </button>
+          </h2>
+          <div id="collapseOne text-secondary" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              MySQL - Chapter 1
+              <i class="bi bi-book ms-5 fs-1"></i>
+            </button>
+          </h2>
+          <div id="collapseOne text-secondary" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Python - Chapter 1
+              <i class="bi bi-book ms-5 fs-1"></i>
+            </button>
+          </h2>
+          <div id="collapseOne text-secondary" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row my-5">
+
+    <div class="col-md-4">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              C++ - Chapter 1
+              <i class="bi bi-book ms-5 fs-1"></i>
+            </button>
+          </h2>
+          <div id="collapseOne text-secondary" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              C# - Chapter 1
+              <i class="bi bi-book ms-5 fs-1"></i>
+            </button>
+          </h2>
+          <div id="collapseOne text-secondary" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              JAVA - Chapter 1
+              <i class="bi bi-book ms-5 fs-1"></i>
+            </button>
+          </h2>
+          <div id="collapseOne text-secondary" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Accordion for book chapter preview -->
+
+<!-- review heading -->
+<section id="reviews">
+  <div class="container-lg">
+    <div class="text-center">
+      <p class="display-2 my-5 fw-light text-muted">Book reviews below</p>
+      <p class="lead display-6 text-dark my-5">What the people think ...</p>
+    </div>
+
+<!-- review heading -->
+
+<!-- Reviws of People -->
+<div class="container-lg">
+  <div class="row">
+    <div class="col">
+      <ul class="list-group text-start">
+        <span class="list-group-item disabled" aria-disabled="true"> <i class="bi bi-person-circle"></i>
+           Mario <p class="text-dark">Lorem, ipsum dolor sit amet.
+            <i class="bi bi-star-fill ms-5"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+
+           </p> </span>
+      </ul>
+
+      <ul class="list-group text-start">
+        <span class="list-group-item disabled" aria-disabled="true"> <i class="bi bi-person-circle"></i> 
+          Luigi <p class="text-dark">Lorem ipsum dolor sit amet.
+            <i class="bi bi-star-fill ms-5"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </p></span>
+      </ul>
+
+      <ul class="list-group text-start">
+        <span class="list-group-item disabled" aria-disabled="true"> <i class="bi bi-person-circle"></i> 
+          Max<p class="text-dark">Lorem ipsum dolor sit amet.
+            <i class="bi bi-star-fill ms-5"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </p> </span>
+      </ul>
+
+      <ul class="list-group text-start">
+        <span class="list-group-item disabled" aria-disabled="true"> <i class="bi bi-person-circle"></i> 
+          Brad<p class="text-dark">Lorem ipsum dolor sit amet.
+            <i class="bi bi-star-fill ms-5"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </p> </span>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+<!-- Reviws of People -->
+
+<!-- Your Query -->
+<div class="conrtainer-lg my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+
+      <p class="display-6 text-dark">Send us your query </p>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"><span class="h3 text-muted">Your Name:</span></label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example: Jane Doe">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"><span class="h3 text-muted">Your Query below:</span></label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Query"></textarea>
+      </div>
+      <div class="d-grid gap-2 col-4 mx-auto">
+        <button class="btn btn-success btn-lg" type="submit" value="Submit">Submit your query</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Your Query -->
+
+
+<!-- Contact -->
+  <section id="contact" class="my-5">
+    <div class="container-lg">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+
+        <p class="display-6 text-dark">Contact us for further information</p>
+
+        <label for="exampleFormControlInput1" class="form-label"><span class="h3 text-muted">Your Email:</span></label>
+        <div class="input-group mb-3">
+          <span class="input-group-text">Email<i class="bi bi-envelope-fill ms-2"></i></span>
+          <input type="email" class="form-control"placeholder="example: Jane Doe@example.com">
+          <span class="input-group-text"><i class="bi bi-question-diamond-fill"></i></span>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"><span class="h3 text-muted">Your Name:</span></label>
+          <input type="text" class="form-control" placeholder="example: Jane Doe">
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"><span class="h3 text-muted">Your question:</span></label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="this is my question ...">
+        </div>
+
+        <div class="d-grid gap-2 col-4 mx-auto">
+          <button class="btn btn-success btn-lg" type="submit" value="Submit">Submit</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </section>
+<!-- Contact -->
+
+<!-- further information -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col">
+        <p class="display-6 text-muted text-center">Want to know more?</p>
+        <p class="fs-4 text-dark text-center">Get the latest news and updates here ...</p>
+        <p class="fs-5 text-dark text-center">
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
+      sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
+      dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora 
+      incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum 
+      exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem 
+      vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui 
+      dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+      </div>
+    </div>
+  </div>
+<!-- further information -->
+
+<!-- modal -->
+<section>
+
+  
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Latest news</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="h6 fw-light">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="d-grid gap-2 col-4 mx-auto btn btn-primary btn-lg my-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Register for updates
+        </button> 
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- modal -->
+
+
+
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+    <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- offcanvas -->
+</body>
+</html>
