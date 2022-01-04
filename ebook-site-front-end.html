@@ -7,6 +7,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -86,6 +90,8 @@
                 </p>
             </div>
 
+
+            <!-- offcanvas button -->
             <div class="container">
               <div class="row align-items-center px-5 ms-5">
                 <div class="col">
@@ -98,6 +104,8 @@
               </div>  
             </div>
 
+            <!-- offcanvas button -->
+
           </div>
     </div>
    </section>
@@ -107,23 +115,20 @@
     <div class="container-lg">
     <div class="card-group my-5 gap-5">
       <!-- Card 1 -->
-      <div class="card border-primary mt-5 text-light" style="height: 35rem; background-color: darkturquoise;">
-        <div class="card-header"><p class="display-6 text-light text-center">Most Popular</p></div>
-        <div class="card-header"><p class="display-5 text-light text-center">Monthly Membership</p></div>
+      <div class="card border-5 border-primary mt-5 text-light" style="height: 35rem; background-color: darkslategrey;">
+        <div class="card-header"><p class="display-6 text-light text-center">For a crash course</p></div>
+        <div class="card-header"><p class="display-5 text-light text-center">Revision</p></div>
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
         </div>
       </div>
       <!-- Card 1 -->
 
 
       <!-- Card 2 -->
-      <div class="card border-success border-start text-light border-success" style="height: 40rem; background-color: darkcyan;">
-        <div class="card-header"><p class="display-6 text-center ">Most Popular</p></div>
+      <div class="card border-5 border-success border-start text-light border-success" style="height: 40rem; background-color: darkgray;">
+        <div class="card-header"><p class="display-6 text-center ">For All users</p></div>
         <div class="card-header"><p class="display-5 text-center">Monthly Membership</p></div>
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -135,15 +140,12 @@
 
 
       <!-- Card 3 -->
-      <div class="card border-primary mt-5 text-light" style="height: 35rem; background-color: darkturquoise;">
-        <div class="card-header"><p class="display-6 text-light text-center">Most Popular</p></div>
-        <div class="card-header"><p class="display-5 text-light text-center">Monthly Membership</p></div>
+      <div class="card border border-5 border-primary border-start-primary mt-5 text-light" style="height: 35rem; background-color:darkslategrey;">
+        <div class="card-header"><p class="display-6 text-light text-center">For Advance users</p></div>
+        <div class="card-header"><p class="display-5 text-light text-center">Advance roadmap</p></div>
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
         </div>
       </div>
       <!-- Card 3 -->
@@ -521,7 +523,7 @@
         </div>
       </div>
     </div>
-
+    <!-- <a class="btn btn-primary d-grid gap-2 col-4 mx-auto btn btn-secondary btn-lg my-5" href="#main-nav" role="button">Back to the top</a> -->
   </div>
 </section>
 <!-- Accordion for book chapter preview -->
@@ -628,7 +630,7 @@
           <span class="input-group-text">Email<i class="bi bi-envelope-fill ms-2"></i></span>
           <input type="email" class="form-control"placeholder="example: Jane Doe@example.com">
           <span class="input-group-text"><i class="bi bi-question-diamond-fill"></i></span>
-        </div>
+        </div>    
 
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label"><span class="h3 text-muted">Your Name:</span></label>
@@ -707,9 +709,12 @@
           Register for updates
         </button> 
 
+
+        <a class="btn btn-primary d-grid gap-2 col-4 mx-auto btn btn-secondary btn-lg my-5" href="#main-nav" role="button">Back to the top</a>
       </div>
     </div>
   </div>
+
 </section>
 <!-- modal -->
 
@@ -718,25 +723,124 @@
 <!-- offcanvas -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">What is hardware?</h5>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
     <div>
-      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      <p class="fs-3 text-muted">Computer hardware includes the physical parts of a computer, such as the case,
+        central processing unit (CPU), monitor, mouse, keyboard, computer data storage, graphics card, sound card,
+        speakers and motherboard. </p>
     </div>
-    <div class="dropdown mt-3">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+
+    <div>
+      <p class="h6 fs-5 text-dark">By contrast, software is the set of instructions that can be stored and run
+        by hardware. Hardware is so-termed because it is "hard" or rigid with respect to changes, whereas software
+        is "soft" because it is easy to change.Hardware is typically directed by the software to execute any command
+        or instruction. A combination of hardware and software forms a usable computing system, although other systems
+        exist with only hardware.</p>
+    </div>
+
+    <div class="mb-5">
+      <img src="/assets/computer-hardware.jpg" alt="Ebook Cover" class="img-fluid d-none d-md-block">
+    </div>
+
+    <div id="hardware-menu">
+      <p class="fs-1 text-dark">Other Hardware equipments</p>
+    </div>
+
+    <!-- offcanvas drop-down menu -->
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="small-dd" data-bs-toggle="dropdown" aria-expanded="false">
         Dropdown button
       </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="small-dd">
+        <li><a class="dropdown-item" href="#mother-board">Motherboard</a></li>
+        <li><a class="dropdown-item" href="#cpu">Central Processing Unit (CPU)</a></li>
+        <li><a class="dropdown-item" href="#vd">Video card</a></li>
+        <li><a class="dropdown-item" href="#ram">Random Access Memory (RAM)</a></li>
+        <li><a class="dropdown-item" href="#psu">Power Supply Unit (PSU)</a></li>
+        <li><a class="dropdown-item" href="#hdd">Hard Disk Drive (HDD)</a></li>
+        <li><a class="dropdown-item" href="#ssd">Solid-State Drive (SSD)</a></li>
       </ul>
     </div>
+    <!-- offcanvas drop-down menu -->
+
+
+
+
+    <!-- more body content inside offcanvas -->
+    <div class="mt-5">
+
+      <h5 class="fs-3" id="mother-board">Motherboard</h5>
+      <p class="fs-6 text-dark">
+        The motherboard is the piece of computer hardware that can be thought of as the "backbone" of the PC, or more appropriately as the "mother" that holds all the pieces together.
+        Phones, tablets and other small devices have motherboards, too, but they're often called logic boards instead. Their components are usually soldered directly onto the board to save space, which means there aren't expansion slots for upgrades like you see in desktop computers.       
+        The IBM Personal Computer that was released in 1981, is considered to be the very first computer motherboard (it was called a "planar" at the time).    
+        Popular motherboard manufacturers include ASUS, AOpen, Intel, ABIT, MSI, Gigabyte, and Biostar.</p>
+    </div>
+
+    <div class="mt-5">
+    <h5 class="fs-3" id="cpu">Central Processing Unit (CPU)</h5>
+      <p class="fs-6 text-dark">
+        The central processing unit (CPU) is the computer component that's responsible for interpreting and executing most of the commands from the computer's other hardware and software.
+        All sorts of devices use a CPU, including desktop, laptop, and tablet computers, smartphones, even your flat-screen television set.
+        Intel and AMD are the two most popular CPU manufacturers for desktops, laptops, and servers, while Apple, NVIDIA, and Qualcomm are big smartphone and tablet CPU makers.
+        You may see many different names used to describe the CPU, including processor, computer processor, microprocessor, central processor, and "the brains of the computer."
+        Computer monitors or hard drives are sometimes very incorrectly referred to as the CPU, but those pieces of hardware serve entirely different purposes and are in no way the same thing as the CPU.
+      </p>
+    </div>
+
+    <div class="mt-5">
+    <h5 class="fs-3" id="cpu">Video card</h5>
+      <p class="fs-6 text-dark">
+        The video card is an expansion card that allows the computer to send graphical information to a video display device such as a monitor, TV, or projector.
+        Some other names for a video card include graphics card, graphics adapter, display adapter, video adapter, video controller, and add-in boards (AIBs).
+        A staggering number of companies manufacture video cards, but almost every one includes a graphics processing unit (GPU) from either NVIDIA Corporation or AMD.
+      </p>
+    </div>
+
+    <div class="mt-5">
+    <h5 class="fs-3" id="cpu">Random Access Memory (RAM)</h5>
+    <p class="fs-6 text-dark">
+      Random Access Memory, or RAM (pronounced as ramm), is the physical hardware inside a computer that temporarily stores data, serving as the computer's "working" memory.
+      Additional RAM allows a computer to work with more information at the same time, which usually has a considerable effect on total system performance.
+      Some popular manufacturers of RAM include Kingston, PNY, Crucial, and CORSAIR.
+    </p>
+  </div>
+
+  <div class="mt-5">
+  <h5 class="fs-3" id="cpu">Power Supply Unit (PSU)</h5>
+  <p class="fs-6 text-dark">
+    The power supply unit is the piece of hardware that converts the power provided from the outlet into usable power for the many parts inside the computer case.
+    It converts the alternating current from your wall outlet into a continuous form of power called direct current that the computer components require. It also regulates overheating by controlling voltage, which might change automatically or manually depending on the power supply.
+    The power supply is a crucial piece because, without it, the rest of the internal hardware can't function. Motherboards, cases, and power supplies all come in different sizes called form factors. All three must be compatible to work properly together.
+    CoolMax, CORSAIR, and Ultra are the most popular PSU makers but most are included with a computer purchase, so you only deal manufacturers when you replace the PSU.
+  </p>
+</div>
+
+<div class="mt-5">
+<h5 class="fs-3" id="cpu">Hard Disk Drive (HDD)</h5>
+<p class="fs-6 text-dark">
+  The hard disk drive is the main, and usually most substantial, data storage hardware device in a computer. The operating system, software titles, and most other files are stored in the hard disk drive.
+  The hard drive is sometimes referred to as the "C drive" because Microsoft Windows, by default, designates the "C" drive letter to the primary partition on the primary hard drive in a computer.
+  While this isn't a technically correct term to use, it is still prevalent. For example, some computers have multiple drive letters (e.g., C, D, and E) representing areas across one or more hard drives. The hard disk drive also goes by the name HDD (its abbreviation), hard drive, hard disk, magnetic hard drive, mechanical hard drive, fixed drive, fixed disk, and fixed disk drive.
+  Regardless of what it's called, the primary hard drive typically contains the root folder of the operating system used.
+</p>
+</div>
+
+<div class="mt-5">
+<h5 class="fs-3" id="cpu">Solid-State Drive (SSD)</h5>
+<p class="fs-6 text-dark">
+  Solid state refers to electronic circuitry that is built entirely of semiconductors. The term was originally used to define those electronics, such as a transistor radio that used semiconductors rather than vacuum tubes in its construction.
+  Most electronics today are built around semiconductors and chips. A solid state drive uses, as its primary storage medium, semiconductors rather than the magnetic platters of a conventional hard drive.
+</p>
+</div>
+    <!-- more body content inside offcanvas -->
+
+
   </div>
 </div>
-<!-- offcanvas -->
+<!-- offcanvas -->  
 </body>
 </html>
